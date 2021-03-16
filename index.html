@@ -13,7 +13,8 @@
 
 <body class="container">
     <article class="start">
-        <h1 class="mt-5 text-center">운동해야하는데 나한테 맞는 운동은 어떤걸까?</h1>
+        <h1 class="mt-5 text-center">나랑 딱 맞는 운동 없나?</h1>
+        <h3 class="mt-3 text-center">성격유형 별 운동 추천</h3>
         <button type="button" class="btn btn-success mt-5" onclick="start();">알아보러 가기</button>
     </article>
 
@@ -112,7 +113,7 @@
                 ($("#SN").val() < 2) ? mbti += "N" : mbti += "S";
                 ($("#TF").val() < 2) ? mbti += "F" : mbti += "T";
                 ($("#JP").val() < 2) ? mbti += "P" : mbti += "J";
-                alert(mbti);
+                // alert(mbti);
                 /*31줄의 article class="result"를 64줄의 var result와 연결 */
                 $("#img").attr("src",result[mbti]["img"]);
                 $("#name").html(result[mbti]["name"]);
